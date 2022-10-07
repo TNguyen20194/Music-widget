@@ -46,14 +46,6 @@ img {
     line-height: 1;
     overflow: hidden;
 }
-@keyframes marquee {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(-150%);
-    }
-}
 .text h2 {
     font-size: 1.7rem;
     animation: marquee 15s linear infinite;
@@ -107,4 +99,12 @@ img {
 .play-icon:hover .circle {
     cursor: auto;
     transform: scale(1.05);
+}
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-150%);
+    }
 }
